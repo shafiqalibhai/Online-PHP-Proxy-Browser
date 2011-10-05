@@ -1,0 +1,34 @@
+<ul id="tree1" class="tree">
+	<li class="folder f-open root"><span>Examples</span>
+		<ul>
+			<li id="todoLink" class="doc"><span><a>Lorem Ipsum</a></span></li>
+			<li id="youtube4Link" class="doc"><span><a>Zero7 - Crosses</a></span></li>
+		</ul>
+	</li>
+</ul>
+
+<script type="text/javascript">
+
+	$('todoLink').addEvent('click', function(e){
+		MochaUI.updateContent({
+			'element': $('mainPanel'),
+			'loadMethod': 'xhr',
+			'url': 'pages/lipsum.html',
+			'title': 'Lorem Ipsum',
+			'padding': { top: 8, right: 8, bottom: 8, left: 8 }
+		});
+		$('mainPanel').setStyle('background','#fff');
+	});
+
+	$('youtube4Link').addEvent('click', function(e){
+		MochaUI.updateContent({
+			'element': $('mainPanel'),
+			'loadMethod': 'iframe',
+			'url': 'pages/youtube4.html',
+			'title': 'Zero7 - Crosses',
+			'padding': { top: 0, right: 0, bottom: 0, left: 0 }
+		});
+		$('mainPanel').setStyle('background','#000');
+	});
+
+</script>

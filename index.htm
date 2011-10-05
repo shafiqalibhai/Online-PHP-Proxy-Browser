@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Unique Technologies - Proxy Browser</title>
+<meta name="description" content="" />
+
+<link rel="stylesheet" href="css/content.css" type="text/css" />
+<link rel="stylesheet" href="css/ui.css" type="text/css" />
+
+<style>	
+
+/* This CSS should be place in a style sheet. It is only here in order to not conflict with the other demos. */
+
+#pageWrapper {
+	background: #5b93cc;
+}
+
+.desktopIcon {
+	margin: 45px 0 0 45px;
+	cursor: pointer;	
+}	
+
+</style>
+
+<!--[if IE]>
+	<script type="text/javascript" src="scripts/excanvas-compressed.js"></script>
+<![endif]-->
+
+<script type="text/javascript" src="scripts/mootools-1.2-core.js"></script>
+<script type="text/javascript" src="scripts/mootools-1.2-more.js"></script>
+
+<!--
+		
+<script type="text/javascript" src="scripts/mocha.js"></script>
+
+-->	
+
+<script type="text/javascript" src="scripts/source/Utilities/mocha.js.php"></script>	
+
+<script type="text/javascript" src="scripts/demo-virtual-desktop-init.js"></script>
+
+</head>
+<body>
+
+<div id="desktop">
+
+<div id="desktopHeader">
+<div id="desktopTitlebarWrapper">
+<a href="http://unique-technologies.net">
+	<div id="desktopTitlebar">
+		<h1 class="applicationTitle">UT Proxy Browser</h1>
+		<h2 class="tagline">Unique Technologies <span class="taglineEm">Proxy Browser</span></h2>
+		<div id="topNav">
+			<ul class="menu-right">
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+</div><!-- desktopHeader end -->
+
+<div id="dockWrapper">
+	<div id="dock">
+		<div id="dockPlacement"></div>
+		<div id="dockAutoHide"></div>
+		<div id="dockSort"><div id="dockClear" class="clear"></div></div>
+	</div>
+</div>
+
+<div id="pageWrapper">
+	<div id="page">
+		<img class="desktopIcon" src="images/flags/United States.png" alt="Camera" width="75" height="75" onload="fixPNG(this)" id="usa" />
+		<img class="desktopIcon" src="images/flags/China.png" alt="Camera" width="75" height="75" onload="fixPNG(this)" id="china" />
+		<img class="desktopIcon" src="images/flags/European Union.png" alt="Camera" width="75" height="75" onload="fixPNG(this)" id="eu" />
+		<img class="desktopIcon" src="images/flags/United Arab Emirates.png" alt="Camera" width="75" height="75" onload="fixPNG(this)" id="uae" />
+	</div>
+</div>
+
+<div id="desktopFooterWrapper">
+	<div id="desktopFooter">
+		&copy; 2009 <a target="_blank" href="http://unique-technologies.net">Unique Technologies</a> - All Rights Reserved<a id="minimizeLink" href="" style="float:right;">Minimize All Windows</a>
+	</div>
+</div>
+
+</div><!-- desktop end -->
+
+</body>
+</html>
